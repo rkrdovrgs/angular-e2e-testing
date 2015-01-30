@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>e2e-angular</title>
+</head>
+<body>
+<div ng-controller="TestCtrl">
+    <label>First name:</label>
+    <input type="text" ng-model="firstName"/>
+
+    <p>Hello {{firstName}}!</p>
+
+    <br/>
+    <label>Active users</label>
+    <ul>
+        <li ng-repeat="u in users" ng-if="u.isActive">
+            {{u.firstName}}
+        </li>
+    </ul>
+
+</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
