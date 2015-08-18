@@ -11,5 +11,13 @@ exports.config = {
     jasmineNodeOpts: {
         showColors: true,
         defaultTimeoutInterval: 30000
+    },
+    onPrepare: function() {
+        require('jasmine-given');
+
+        browser.driver.manage().window().maximize();
+
+        var SpecReporter = require('jasmine-spec-reporter');
+        jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: true}));
     }
 };

@@ -15,6 +15,15 @@
     "grunt-protractor-runner": "^1.2.1",
     "grunt-selenium-webdriver": "^0.2.431",
     "http": "0.0.0",
-    "serve-static": "^1.8.1"
+    "serve-static": "^1.8.1",
+	"jasmine-given": "^2.6.3",
+    "jasmine-spec-reporter": "^1.2.0",
+    "karma": "^0.13.9",
+    "ng-mock-e2e": "^0.1.1",
+    "serve-static": "^1.8.1",
+    "underscore-node": "^0.1.2"
+  },
+  "dependencies": {
+    "protractor": "^2.1.0"
   }
 }
